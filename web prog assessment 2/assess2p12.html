@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Portal</title>
+
+<style>
+
+/* Whole page background */
+body{
+    background-color:skyblue;
+    font-family:Arial;
+}
+
+/* Main heading style */
+h1{
+    text-align:center;
+}
+
+/* Navigation links style */
+nav{
+    text-align:center;
+}
+
+nav a{
+    background:darkblue;
+    color:white;
+    padding:10px;
+    margin:5px;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+/* Section block styling */
+.section{
+    background:darkblue;
+    color:white;
+    padding:20px;
+    margin:20px;
+}
+
+/* Input fields styling */
+input, select{
+    margin:5px;
+    padding:5px;
+}
+
+/* Bottom-right text */
+.bottom-right{
+    position:fixed;
+    bottom:10px;
+    right:10px;
+}
+
+</style>
+
+<script>
+
+/* Function to show popup message when form is submitted */
+function submitForm(){
+    alert("Form Submitted Successfully");
+}
+
+</script>
+
+</head>
+
+<body>
+
+<!-- Page heading -->
+<h1>Student Registration Portal</h1>
+
+<!-- Navigation links -->
+<nav>
+<a href="#personal">Personal Information</a>
+<a href="#academic">Academic Details</a>
+<a href="#address">Address Information</a>
+<a href="#account">Account Credentials</a>
+</nav>
+
+<!-- Registration form -->
+<form onsubmit="submitForm()">
+
+<!-- Section 1 -->
+<div id="personal" class="section">
+<h3>Personal Information</h3>
+<input type="text" placeholder="Full Name"><br>
+<input type="date"><br>
+
+<select>
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select><br>
+
+<input type="email" placeholder="Email Address"><br>
+<input type="text" placeholder="Mobile Number">
+</div>
+
+<!-- Section 2 -->
+<div id="academic" class="section">
+<h3>Academic Details</h3>
+<input type="text" placeholder="Register Number"><br>
+<input type="text" placeholder="Degree Program"><br>
+<input type="text" placeholder="Department"><br>
+<input type="text" placeholder="Year of Study">
+</div>
+
+<!-- Section 3 -->
+<div id="address" class="section">
+<h3>Address Information</h3>
+<input type="text" placeholder="Door Number"><br>
+<input type="text" placeholder="Street Name"><br>
+<input type="text" placeholder="City"><br>
+<input type="text" placeholder="State"><br>
+<input type="text" placeholder="Pincode">
+</div>
+
+<!-- Section 4 -->
+<div id="account" class="section">
+<h3>Account Credentials</h3>
+<input type="text" placeholder="Username"><br>
+<input type="password" placeholder="Password"><br>
+<input type="password" placeholder="Confirm Password"><br>
+
+<!-- Submit button -->
+<button type="submit">Submit</button>
+</div>
+
+</form>
+
+<!-- Bottom right registration text -->
+<div class="bottom-right">
+24BCE0040, K. Chakradhar Reddy
+</div>
+
+</body>
+</html>

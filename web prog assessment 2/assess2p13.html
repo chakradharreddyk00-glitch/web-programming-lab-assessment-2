@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickEats Food Delivery</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+line-height:1.6;
+}
+
+/* Header */
+header{
+background:#ff5722;
+color:#fff;
+padding:20px;
+text-align:center;
+}
+
+header h1{
+margin:0;
+}
+
+/* Navigation bar */
+nav{
+background:#333;
+display:flex;
+justify-content:center;
+}
+
+nav a{
+color:#fff;
+padding:14px 20px;
+text-decoration:none;
+display:block;
+}
+
+nav a:hover{
+background:#ff5722;
+}
+
+/* Welcome section */
+.welcome{
+background:url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') no-repeat center center/cover;
+color:#fff;
+text-align:center;
+padding:100px 20px;
+}
+
+.welcome h2{
+font-size:2.5em;
+}
+
+.welcome p{
+max-width:600px;
+margin:20px auto;
+}
+
+.btn{
+background:#ff5722;
+color:#fff;
+padding:10px 20px;
+text-decoration:none;
+border-radius:5px;
+}
+
+/* Food categories */
+.categories{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+padding:40px;
+background:#f4f4f4;
+}
+
+.category{
+text-align:center;
+background:#fff;
+padding:20px;
+border-radius:8px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.category img{
+width:100%;
+height:150px;
+object-fit:cover;
+border-radius:8px;
+}
+
+/* Popular dishes */
+.menu{
+padding:40px;
+text-align:center;
+}
+
+.menu h2{
+margin-bottom:20px;
+}
+
+.dishes{
+display:flex;
+justify-content:center;
+gap:20px;
+}
+
+.dish{
+background:#fff;
+padding:20px;
+border-radius:8px;
+width:250px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.price{
+font-weight:bold;
+margin:10px 0;
+}
+
+/* Contact section */
+.contact{
+background:#f4f4f4;
+padding:40px;
+text-align:center;
+}
+
+/* Footer */
+.footer{
+background:#333;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:20px;
+}
+
+/* Bottom right name */
+.bottom-right{
+position:fixed;
+bottom:10px;
+right:10px;
+font-size:14px;
+color:black;
+background:white;
+padding:5px 10px;
+border-radius:4px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+<h1>QuickEats Food Delivery</h1>
+<p>Fast, Fresh, and at Your Doorstep</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+<a href="#">Home</a>
+<a href="#">Menu</a>
+<a href="#">Order Online</a>
+<a href="#">Contact Us</a>
+</nav>
+
+<!-- Welcome Section -->
+<section class="welcome">
+<h2>Delicious Food Delivered to Your Doorstep</h2>
+<p>
+QuickEats brings you the best meals from your favorite restaurants,
+delivered hot and fresh right to your home.
+</p>
+<a href="#" class="btn">Order Now</a>
+</section>
+
+<!-- Food Categories -->
+<section class="categories">
+
+<div class="category">
+<img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2015/10/pizza-recipe-1.jpg">
+<h3>Pizza</h3>
+<p>Cheesy, hot, and delicious pizzas.</p>
+</div>
+
+<div class="category">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+<h3>Burgers</h3>
+<p>Juicy burgers with fresh toppings.</p>
+</div>
+
+<div class="category">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPuh5-mItCuAUBX7APK67gk4N3adkajqKzBw&s">
+<h3>Biryani</h3>
+<p>Authentic aromatic biryani varieties.</p>
+</div>
+
+<div class="category">
+<img src="https://www.tasteofhome.com/wp-content/uploads/2025/07/30-Summer-Desserts-That-Are-No-Bake-and-Oh-So-Easy_TOHcom23_27515_P2_MD_03_22_6b.jpg">
+<h3>Desserts</h3>
+<p>Sweet treats to end your meal.</p>
+</div>
+
+</section>
+
+<!-- Popular Dishes -->
+<section class="menu">
+
+<h2>Popular Dishes</h2>
+
+<div class="dishes">
+
+<div class="dish">
+<h3>Margherita Pizza</h3>
+<p>Classic pizza topped with mozzarella and basil.</p>
+<p class="price">₹299</p>
+<a href="#" class="btn">Add to Cart</a>
+</div>
+
+<div class="dish">
+<h3>Cheese Burger</h3>
+<p>Grilled burger with cheese and vegetables.</p>
+<p class="price">₹199</p>
+<a href="#" class="btn">Add to Cart</a>
+</div>
+
+<div class="dish">
+<h3>Chicken Biryani</h3>
+<p>Spiced rice with tender chicken and herbs.</p>
+<p class="price">₹349</p>
+<a href="#" class="btn">Add to Cart</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+<section class="contact">
+<h2>Contact Us</h2>
+<p>Phone: +91 9963062825</p>
+<p>Email: cdr@quickeats.com</p>
+<p>Location: Serving Vellore and nearby areas</p>
+<p>Follow us on: Facebook | Instagram | Twitter</p>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+<p>&copy; 2026 QuickEats Food Delivery | All rights reserved</p>
+</footer>
+
+<!-- Name and Register Number -->
+<div class="bottom-right">
+24BCE0040, K. Chakradhar Reddy
+</div>
+
+</body>
+</html>
